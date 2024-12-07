@@ -1,0 +1,21 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+.top{
+    position: fixed;
+    margin-top: 0; 
+    width: 100%;
+}
+
+.sidebar{
+    position: fixed;
+    margin-right: 0;
+}
+
+.footer{
+    position: fixed;
+    margin-bottom: 0;
+    width: 100%;
+}
