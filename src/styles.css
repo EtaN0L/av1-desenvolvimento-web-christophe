@@ -4,38 +4,12 @@ html, body{
     margin: 0;
     padding: 0;
     background-color: lightgray;
-    font-family: Arial, sans-serif;
+    font-family: Roboto, Arial, "Helvetica Neue", sans-serif;
 }
 
-.app-container{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.content-wrapper{
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.main-content {
-    flex: 1;
-    padding-right: 20px; /* Optional: gives some space before the sidebar */
+@font-face {
+    font-family: Pricedown;
+    src: url("/fonts/Pricedown.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
   }
-
-.sidebar {
-    border-radius: 20px;
-    width: 250px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 100px;
-    right: 30px;
-    height: 70%;
-}
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

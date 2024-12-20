@@ -1,0 +1,17 @@
+.app-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content-wrapper{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 1;
+    padding-right: 20px;
+  }

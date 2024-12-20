@@ -1,0 +1,10 @@
+@use '@angular/material' as mat;
+mat-progress-bar {
+  @include mat.progress-bar-overrides((
+    active-indicator-color: darkgreen,
+    track-color: rgba(255, 255, 255, 0.6),
+    track-height: 15px,
+    active-indicator-height: 11px,
+  ));
+  width: 400px;
+}
