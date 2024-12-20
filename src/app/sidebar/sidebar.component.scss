@@ -1,13 +1,21 @@
+@use '@angular/material' as mat;
+mat-expansion-panel {
+    @include mat.expansion-overrides((
+        header-text-font: Pricedown,
+    ));
+}
+
+
+
 .sidebar {
+    display: flex;
     border-radius: 20px;
-    width: 250px;
     background-color: #f4f4f4;
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     position: fixed;
-    top: 75px;
-    right: 10px;
-    height: 77%;
+    top: 141px;
+    right: 20px;
 }
 
 ul{

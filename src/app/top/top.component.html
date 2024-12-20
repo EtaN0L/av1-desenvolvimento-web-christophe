@@ -7,6 +7,16 @@
         <a routerLink="/page-friends" routerLinkActive="active" ariaCurrentWhenActive="page">Friends</a>
     </nav>
     <div class="user-profile">
-        <img src="unknown-user-logo.svg" alt="user-profile-logo" class="profile-icon">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="User profile icon">
+            <mat-icon>account_circle</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <a routerLink="/page-account" routerLinkActive="active" ariaCurrentWhenActive="page">Account</a>
+            </button>
+            <button mat-menu-item>
+              <a href="#">Logout</a>
+            </button>
+          </mat-menu>
     </div>
 </header>
