@@ -1,22 +1,24 @@
 <header class="top-bar">
-    <div class="logo">
-        <img src="grand-theft-auto-v-seeklogo.svg" alt="gtav-logo">
-    </div>
-    <nav class="top-menu">
-        <a routerLink="/page-home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
-        <a routerLink="/page-friends" routerLinkActive="active" ariaCurrentWhenActive="page">Friends</a>
-    </nav>
-    <div class="user-profile">
-        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="User profile icon">
-            <mat-icon>account_circle</mat-icon>
-          </button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item>
-              <a routerLink="/page-account" routerLinkActive="active" ariaCurrentWhenActive="page">Account</a>
-            </button>
-            <button mat-menu-item>
-              <a href="#">Logout</a>
-            </button>
-          </mat-menu>
-    </div>
+  <div class="logo">
+    <a href=""><img src="grand-theft-auto-v-seeklogo.svg" alt="gtav-logo"></a>
+  </div>
+  <nav class="top-menu">
+    <a routerLink="/page-home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+    <a routerLink="/page-friends" routerLinkActive="active" ariaCurrentWhenActive="page">Friends</a>
+  </nav>
+  <div class="user-profile">
+    <button class="generic"><a routerLink="/page-create-account" routerLinkActive="active" ariaCurrentWhenActive="page">Create Account</a></button>
+    <button class="generic"><a routerLink="/page-login" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a></button>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="User profile icon">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <a routerLink="/page-account" routerLinkActive="active" ariaCurrentWhenActive="page">Account</a>
+      </button>
+      <button mat-menu-item>
+        <a href="#">Logout</a>
+      </button>
+    </mat-menu>
+  </div>
 </header>

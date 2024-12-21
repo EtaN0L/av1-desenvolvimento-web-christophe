@@ -2,6 +2,8 @@ import { Routes } from '@angular/router';
 import { PageHomeComponent } from './pages/page-home/page-home.component';
 import { PageFriendsComponent } from './pages/page-friends/page-friends.component';
 import { PageAccountComponent } from './pages/page-account/page-account.component';
+import { PageCreateAccountComponent } from './pages/page-create-account/page-create-account.component';
+import { PageLoginComponent } from './pages/page-login/page-login.component';
 
 //heists pages
 import { PageOgHeistsComponent } from './pages/heists/page-og-heists/page-og-heists.component';
@@ -26,6 +28,8 @@ export const routes: Routes = [
     {path: 'page-home', component: PageHomeComponent},
     {path: 'page-friends', component: PageFriendsComponent},
     {path: 'page-account', component: PageAccountComponent},
+    {path: 'page-create-account', component: PageCreateAccountComponent},
+    {path: 'page-login', component: PageLoginComponent},
     {path: 'page-og-heists', component: PageOgHeistsComponent},
     {path: 'page-doomsday', component: PageDoomsdayComponent},
     {path: 'page-casino', component: PageCasinoComponent},

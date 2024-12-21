@@ -55,3 +55,20 @@
       margin-top: 10px;
     }
   }
+
+  .generic{
+    background-color: black;
+    border: 0px;
+    margin: 2px;
+  }
+
+  .generic a{
+    font-family: Pricedown;
+    color: white;
+    text-decoration: none;
+  }
+
+  button a{
+    text-decoration: none;
+    color: black;
+  }
