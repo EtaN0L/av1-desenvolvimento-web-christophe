@@ -1,1 +1,27 @@
-<p>page-create-account works!</p>
+<div id="Cform">
+    <h1>Create your account</h1>
+    <table id="Ctable">
+        <tr>
+            <td class="Tlabels"><label for="Cname">Username: </label></td>
+            <td><input type="text" id="Cname" class="Tinput" [(ngModel)]="data.username"/></td>
+        </tr>
+        <tr>
+            <td class="Tlabels"><label for="Cemail">Email: </label></td>
+            <td><input type="text" id="Cemail" class="Tinput" [(ngModel)]="data.email"/></td>
+        </tr>
+        <tr>
+            <td class="Tlabels"><label for="Cpassword">Password: </label></td>
+            <td><input type="password" id="Cpassword" class="Tinput" [(ngModel)]="data.password"/></td>
+            <td><small> 8 characters minimum.</small></td>
+        </tr>
+        <tr>
+            <td class="Tlabels"><label for="CpasswordRepeat">Repeat password: </label></td>
+            <td><input type="password" id="CpasswordRepeat"  class="Tinput" [(ngModel)]="data.re_password"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button (click)="createAccount()">Create Account</button></td>
+        </tr>
+    </table>
+    
+</div>

@@ -1,0 +1,16 @@
+#Cform{
+    text-align: center;
+}
+
+#Ctable{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Tinput{
+    width: 250px;
+}
+
+.Tlabels{
+    text-align: right;
+}
