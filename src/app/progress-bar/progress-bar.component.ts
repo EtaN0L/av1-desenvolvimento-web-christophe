@@ -8,5 +8,5 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
   styleUrl: './progress-bar.component.scss'
 })
 export class ProgressBarComponent {
-
+  value = 0;
 }

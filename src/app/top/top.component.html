@@ -16,7 +16,7 @@
       <button mat-menu-item>
         <a routerLink="/page-account" routerLinkActive="active" ariaCurrentWhenActive="page">Account</a>
       </button>
-      <button mat-menu-item>
+      <button (click)="logout()" mat-menu-item>
         <a href="#">Logout</a>
       </button>
     </mat-menu>

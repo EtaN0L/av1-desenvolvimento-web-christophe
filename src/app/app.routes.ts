@@ -25,6 +25,7 @@ import { PageAirFreightComponent } from './pages/other/page-air-freight/page-air
 import { PageNightclubComponent } from './pages/other/page-nightclub/page-nightclub.component';
 
 export const routes: Routes = [
+    {path: '', redirectTo: '/page-home', pathMatch: 'full'},
     {path: 'page-home', component: PageHomeComponent},
     {path: 'page-friends', component: PageFriendsComponent},
     {path: 'page-account', component: PageAccountComponent},

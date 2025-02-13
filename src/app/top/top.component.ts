@@ -13,4 +13,8 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 })
 export class TopComponent {
 
+
+  logout() {
+    localStorage.setItem('accessToken', '');
+  }
 }
