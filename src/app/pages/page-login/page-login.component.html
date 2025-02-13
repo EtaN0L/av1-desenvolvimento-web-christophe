@@ -1,1 +1,22 @@
-<p>page-login works!</p>
+<div id="Lform">
+    <h1>Login</h1>
+    <table id="Ltable">
+        <tr>
+            <td class="Tlabels"><label for="Lname">Username: </label></td>
+            <td><input type="text" id="Lname" class="Tinput" [(ngModel)]="data.username"/></td>
+        </tr>
+        <tr>
+            <td class="Tlabels"><label for="Lpassword">Password: </label></td>
+            <td><input type="password" id="Lpassword" class="Tinput" [(ngModel)]="data.password"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button (click)="login()">Login</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><b>{{message}}</b></td>
+        </tr>
+    </table>
+    
+</div>

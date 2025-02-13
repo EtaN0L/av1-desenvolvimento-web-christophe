@@ -10,14 +10,19 @@ import { FormsModule } from '@angular/forms';
 })
 export class PageCreateAccountComponent {
   data = {username: '', email: '', password: '', re_password: ''};
-
+  message = '';
   constructor(private http: HttpClient){}
 
   createAccount(){
     this.http
-      .post('http://localhost:8000/auth/users/', this.data)
-      .subscribe((answer) => {
-        console.log(answer);
+      .post('http://localhost:8000/auth/users/', this.data, {observe:'response'})
+      .subscribe({
+        next: (answer: any) => {
+          this.message = "Account created.";
+        },
+        error: (error: any) => {
+          this.message = "Error in account creation.";
+        }
       });
   }
 }

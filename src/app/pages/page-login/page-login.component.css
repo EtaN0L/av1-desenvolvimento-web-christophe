@@ -1,0 +1,16 @@
+#Lform{
+    text-align: center;
+}
+
+#Ltable{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Tinput{
+    width: 250px;
+}
+
+.Tlabels{
+    text-align: right;
+}
