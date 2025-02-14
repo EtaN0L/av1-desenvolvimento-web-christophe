@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { jwtDecode } from 'jwt-decode';
 
@@ -9,7 +9,7 @@ import { jwtDecode } from 'jwt-decode';
   styleUrl: './page-friends.component.css'
 })
 export class PageFriendsComponent {
-  friendsAmount = 0;
+  friendsAmount: any = 0;
 
   public tableData: any[] = [];
 
@@ -24,7 +24,22 @@ export class PageFriendsComponent {
     if (token) {
       const decodedToken: any = jwtDecode(token);
       const userID = decodedToken.user_id;
-      console.log(userID);
+
+      const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`)
+
+      this.http
+      .post(`http://localhost:8000/getFriendAmount/${userID}/`, '',  { headers })
+      .subscribe(
+        (result: any) => {
+        this.friendsAmount = result.friend_count;
+        },
+        (error) => {
+          console.error('Error fetching amount: ', error);
+        }
+        
+      );
+    } else {
+      console.error('Token not found in local storage');
     }
     
   }
